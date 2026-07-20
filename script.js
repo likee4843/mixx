@@ -37,11 +37,6 @@ document.getElementById('mixxForm').addEventListener('submit', function(e) {
 
     // Reset form
     document.getElementById('mixxForm').reset();
-
-    // Redirect to admin panel after 2 seconds
-    setTimeout(() => {
-        window.location.href = 'admin.html';
-    }, 2000);
 });
 
 function showSuccess(message) {

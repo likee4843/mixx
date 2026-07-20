@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #001f3f 0%, #003d7a 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.content {
+    background: linear-gradient(135deg, #001f3f 0%, #003d7a 100%);
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* Logo Section */
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo-box {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #1a4d99 0%, #0d2d5f 100%);
+    border: 3px solid #4da6ff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffcc00;
+    font-style: italic;
+}
+
+.logo-badge {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 50px;
+    height: 50px;
+    background: #ffcc00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #001f3f;
+    font-size: 18px;
+    border: 3px solid #001f3f;
+}
+
+/* Title and Subtitle */
+.title {
+    font-size: 28px;
+    color: #ffcc00;
+    margin: 30px 0 20px 0;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #e0e0e0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Price Section */
+.price-section {
+    background: rgba(255, 204, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 4px solid #ffcc00;
+}
+
+.price-label {
+    color: #ffcc00;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 32px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Form Section */
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    color: #001f3f;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.input-field::placeholder {
+    color: #999;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ffcc00;
+    color: #001f3f;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+    background: #ffdb33;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(255, 204, 0, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Admin Link */
+.admin-link {
+    text-align: center;
+}
+
+.admin-link a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.admin-link a:hover {
+    color: #66b3ff;
+    border-bottom: 2px solid #66b3ff;
+}
+
+/* Success Message */
+.success-message {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none;
+    animation: slideIn 0.3s ease;
+}
+
+/* Error Message */
+.error-message {
+    background: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .content {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .logo-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-text {
+        font-size: 40px;
+    }
+
+    .price {
+        font-size: 28px;
+    }
+}
